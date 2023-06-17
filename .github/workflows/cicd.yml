@@ -27,11 +27,6 @@ jobs:
       - name: run
         run: npm start
       - name: print
-        run : 
-            echo 20
-            echo 30
-            echo 40
-            echo 101
-
+        run : echo 20
 
 
