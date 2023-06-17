@@ -25,11 +25,9 @@ jobs:
       - name: install deps
         run:  npm ci
       - name: run
-        run: 
-          - npm start
-          - echo 30+31
-          - npm start
-
+        run: npm start
+      - name: print
+        run : echo 20
 
 
 
