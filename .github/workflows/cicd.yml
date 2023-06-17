@@ -1,0 +1,32 @@
+
+name: CICD pipline
+
+on:
+  push:
+    branch: 
+      - "main"
+      - "master"
+  pull_request:
+    branch: 
+      - "main" 
+      - "master"
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: step1
+        uses: actions/checkout@v2
+      - name: step2
+        uses: actions/setup-node@v2
+        with: 
+         node-version: 16.10
+      - name: install deps
+        run:  npm ci
+      - name: run
+        run: npm start
+
+
+
+
