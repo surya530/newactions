@@ -21,5 +21,5 @@ app.get('/data' , (req,res)=>{
 
 app.listen(3002 , ()=>{});
 
-//console.log({data});
+// // console.log({data});
 
