@@ -27,7 +27,7 @@ jobs:
           #- name: run
           #run: npm start
       - name: print
-        run :
+        run: |
            echo 20
            echo 30+40
 
