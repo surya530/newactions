@@ -24,8 +24,8 @@ jobs:
          node-version: 16.10
       - name: install deps
         run:  npm ci
-      - name: run
-        run: npm start
+          #- name: run
+          #run: npm start
       - name: print
         run : echo 20
 
