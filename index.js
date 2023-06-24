@@ -15,6 +15,7 @@ app.get('/' , async (req, res)=>{
 	res.sendFile(path.join(__dirname , 'build' , 'index.html'));
 });
 */
+// console.log("surya");
 app.get('/data' , (req,res)=>{
 	res.status(200).json({data : data});
 });
